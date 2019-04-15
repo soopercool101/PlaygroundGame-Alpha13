@@ -423,6 +423,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114730948317409702, guid: 08b2dbd01695613408290129227c8417,
+        type: 2}
+      propertyPath: canDash
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114730948317409702, guid: 08b2dbd01695613408290129227c8417,
+        type: 2}
+      propertyPath: dashMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 08b2dbd01695613408290129227c8417, type: 2}
   m_IsPrefabParent: 0
@@ -491,6 +501,11 @@ Prefab:
     - target: {fileID: 1837409281477388, guid: 13802e8c10eb0a84aade0db13fe6f90c, type: 2}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 114622506719687162, guid: 13802e8c10eb0a84aade0db13fe6f90c,
+        type: 2}
+      propertyPath: keyToPress
+      value: 303
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13802e8c10eb0a84aade0db13fe6f90c, type: 2}

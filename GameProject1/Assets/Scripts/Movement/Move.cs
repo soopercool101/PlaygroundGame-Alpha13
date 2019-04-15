@@ -71,7 +71,7 @@ public class Move : Physics2DObject
 	// FixedUpdate is called every frame when the physics are calculated
 	void FixedUpdate ()
 	{
-		// Apply the force to the Rigidbody2d
-		rigidbody2D.AddForce(movement * speed * 10f * ((canDash && Input.GetKeyDown(dashKey)) ? dashMultiplier : 1.0f));
+        // Apply the force to the Rigidbody2d
+		rigidbody2D.AddForce(movement * speed * 10f * ((canDash && Input.GetKey(dashKey)) ? dashMultiplier : 1.0f));
 	}
 }
