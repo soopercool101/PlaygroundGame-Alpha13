@@ -507,7 +507,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1001 &74368177
+--- !u!1001 &82678118
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -545,29 +545,6 @@ Prefab:
     - target: {fileID: 4233660496706098, guid: b1b1d7e5c45fbcb45bd32027abf9f1c0, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114735564093682084, guid: b1b1d7e5c45fbcb45bd32027abf9f1c0,
-        type: 2}
-      propertyPath: mZombiePrefab
-      value: 
-      objectReference: {fileID: 1729487924455860, guid: 39174baad538eed4083abe7039f6208f,
-        type: 2}
-    - target: {fileID: 1543035615799640, guid: b1b1d7e5c45fbcb45bd32027abf9f1c0, type: 2}
-      propertyPath: m_Name
-      value: Spawnpoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 4379468466666774, guid: b1b1d7e5c45fbcb45bd32027abf9f1c0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4379468466666774, guid: b1b1d7e5c45fbcb45bd32027abf9f1c0, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114735564093682084, guid: b1b1d7e5c45fbcb45bd32027abf9f1c0,
-        type: 2}
-      propertyPath: ZOMBIE_SPAWN_RATE
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1b1d7e5c45fbcb45bd32027abf9f1c0, type: 2}
@@ -768,7 +745,7 @@ SpriteRenderer:
 Transform:
   m_PrefabParentObject: {fileID: 4233660496706098, guid: b1b1d7e5c45fbcb45bd32027abf9f1c0,
     type: 2}
-  m_PrefabInternal: {fileID: 74368177}
+  m_PrefabInternal: {fileID: 82678118}
 --- !u!1 &241425900
 GameObject:
   m_ObjectHideFlags: 0
