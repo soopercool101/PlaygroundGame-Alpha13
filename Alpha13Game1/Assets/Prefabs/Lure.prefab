@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4922738526057368}
   - component: {fileID: 212295341013443602}
   - component: {fileID: 60922947997577018}
+  - component: {fileID: 114567518883595398}
   m_Layer: 0
   m_Name: Lure
   m_TagString: Lure
@@ -100,6 +101,18 @@ PolygonCollider2D:
       - {x: -0.205, y: -0.97499996}
       - {x: -0.145, y: -0.965}
       - {x: 0.125, y: -0.815}
+--- !u!114 &114567518883595398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906889554094090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8862ea7b10c84421c9485c36f04335a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestruction: 5
 --- !u!212 &212295341013443602
 SpriteRenderer:
   m_ObjectHideFlags: 1

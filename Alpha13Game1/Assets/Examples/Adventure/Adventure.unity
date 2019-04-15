@@ -8050,9 +8050,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f65a194a6d04c559f3e4f3a2ab77c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToCreate: {fileID: 0}
+  prefabToCreate: {fileID: 1906889554094090, guid: 9d236a94030b8bb4fbb49e26841e690f,
+    type: 2}
   newPosition: {x: 0, y: 0}
   relativeToThisObject: 1
+  maxSpawns: 3
 --- !u!114 &1912110807
 MonoBehaviour:
   m_ObjectHideFlags: 0
