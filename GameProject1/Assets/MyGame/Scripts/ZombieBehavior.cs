@@ -65,15 +65,32 @@ public class ZombieBehavior : Physics2DObject {
 		}
 	}
 
-	void Lure(){
-		direction = (mLure.transform.position - transform.position).normalized;
+	void Lure()
+    {
+        if (GameObject.FindGameObjectsWithTag("Lure").Length == 0 || mLure == null)
+        {
+            isLured = false;
+            return;
+        }
+        direction = (mLure.transform.position - transform.position).normalized;
 	}
 
-	void Follow(){
-		direction = (mPlayer1.transform.position - transform.position).normalized;
+	void Follow()
+    {
+        if (GameObject.FindGameObjectsWithTag("Player").Length == 0 || mPlayer1 == null)
+        {
+            foundTarget = false;
+            return;
+        }
+        direction = (mPlayer1.transform.position - transform.position).normalized;
 	}
 
 	void SearchForTarget(){
+        if (GameObject.FindGameObjectsWithTag("Player").Length == 0)
+        {
+            foundTarget = false;
+            return;
+        }
         try
         {
             float distanceFromP1 = Vector2.Distance(transform.position, mPlayer1.transform.position);
@@ -91,10 +108,7 @@ public class ZombieBehavior : Physics2DObject {
 	}
 
 	void SearchForLure(){
-		float lureCount = 0;
-		foreach (GameObject lure in GameObject.FindGameObjectsWithTag("Lure")) {
-			lureCount++;
-		}
+		float lureCount = GameObject.FindGameObjectsWithTag("Lure").Length;
 		if (lureCount > 0) {
 			mLure = GameObject.FindGameObjectWithTag ("Lure");
 			float distancefromLure = Vector2.Distance (mLure.transform.position, transform.position);

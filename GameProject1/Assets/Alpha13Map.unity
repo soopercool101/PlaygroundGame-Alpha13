@@ -4206,7 +4206,6 @@ GameObject:
   m_Component:
   - component: {fileID: 830529702}
   - component: {fileID: 830529701}
-  - component: {fileID: 830529700}
   - component: {fileID: 830529699}
   m_Layer: 0
   m_Name: P2Camera
@@ -4232,13 +4231,6 @@ MonoBehaviour:
   right: 15.64949
   bottom: -13.5276
   top: 17.65128
---- !u!81 &830529700
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 830529698}
-  m_Enabled: 1
 --- !u!20 &830529701
 Camera:
   m_ObjectHideFlags: 0
