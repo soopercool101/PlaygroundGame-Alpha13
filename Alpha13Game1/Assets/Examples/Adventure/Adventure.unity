@@ -7823,6 +7823,9 @@ GameObject:
   - component: {fileID: 1912110801}
   - component: {fileID: 1912110800}
   - component: {fileID: 1912110799}
+  - component: {fileID: 1912110808}
+  - component: {fileID: 1912110807}
+  - component: {fileID: 1912110806}
   m_Layer: 0
   m_Name: Player (1)
   m_TagString: Player
@@ -8037,6 +8040,59 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1912110806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1912110798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f65a194a6d04c559f3e4f3a2ab77c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToCreate: {fileID: 0}
+  newPosition: {x: 0, y: 0}
+  relativeToThisObject: 0
+--- !u!114 &1912110807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1912110798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ddb73e2f0dc401ebfb23c7b6e72fa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 1912110806}
+  useCustomActions: 0
+  customActions:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  happenOnlyOnce: 0
+  filterByTag: 0
+  filterTag: Player
+  keyToPress: 32
+  eventType: 0
+  frequency: 0.5
+--- !u!114 &1912110808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1912110798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f65a194a6d04c559f3e4f3a2ab77c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToCreate: {fileID: 0}
+  newPosition: {x: 0, y: 0}
+  relativeToThisObject: 1
 --- !u!1 &1961774521
 GameObject:
   m_ObjectHideFlags: 0
