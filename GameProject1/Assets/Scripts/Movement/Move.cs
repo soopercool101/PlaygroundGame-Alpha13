@@ -12,8 +12,11 @@ public class Move : Physics2DObject
 	[Tooltip("Speed of movement")]
 	public float speed = 5f;
 	public Enums.MovementType movementType = Enums.MovementType.AllDirections;
+    public bool canDash;
+    public KeyCode dashKey = KeyCode.LeftShift;
+    public float dashMultiplier = 2.0f;
 
-	[Header("Orientation")]
+    [Header("Orientation")]
 	public bool orientToDirection = false;
 	// The direction that will face the player
 	public Enums.Directions lookAxis = Enums.Directions.Up;
@@ -21,7 +24,6 @@ public class Move : Physics2DObject
 	private Vector2 movement, cachedDirection;
 	private float moveHorizontal;
 	private float moveVertical;
-
 
 	// Update gets called every frame
 	void Update ()
@@ -70,6 +72,6 @@ public class Move : Physics2DObject
 	void FixedUpdate ()
 	{
 		// Apply the force to the Rigidbody2d
-		rigidbody2D.AddForce(movement * speed * 10f);
+		rigidbody2D.AddForce(movement * speed * 10f * ((canDash && Input.GetKeyDown(dashKey)) ? dashMultiplier : 1.0f));
 	}
 }

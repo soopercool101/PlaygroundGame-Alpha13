@@ -20,7 +20,15 @@ public class MoveInspector : InspectorBase
 		EditorGUILayout.PropertyField(serializedObject.FindProperty("speed"));
 		EditorGUILayout.PropertyField(serializedObject.FindProperty("movementType"));
 
-		GUILayout.Space(5);
+        bool dashTemp = EditorGUILayout.Toggle("Can Dash", serializedObject.FindProperty("canDash").boolValue);
+        if (dashTemp)
+        {
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("dashKey"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("dashMultiplier"));
+        }
+        serializedObject.FindProperty("canDash").boolValue = dashTemp;
+
+        GUILayout.Space(5);
 		GUILayout.Label("Orientation", EditorStyles.boldLabel);
 		bool orientToDirectionTemp = EditorGUILayout.Toggle("Orient to direction", serializedObject.FindProperty("orientToDirection").boolValue);
 		if(orientToDirectionTemp)
