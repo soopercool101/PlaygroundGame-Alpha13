@@ -3637,8 +3637,9 @@ GameObject:
   - component: {fileID: 773166207}
   - component: {fileID: 773166209}
   - component: {fileID: 773166208}
+  - component: {fileID: 773166210}
   m_Layer: 5
-  m_Name: StatsPanel (2)
+  m_Name: Player 2 Instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3661,7 +3662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000071526, y: -146}
+  m_AnchoredPosition: {x: 0, y: -190}
   m_SizeDelta: {x: 0, y: -572}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773166208
@@ -3694,6 +3695,18 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 773166206}
+--- !u!114 &773166210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773166206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8862ea7b10c84421c9485c36f04335a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestruction: 5
 --- !u!1 &778010719
 GameObject:
   m_ObjectHideFlags: 0
@@ -8407,8 +8420,9 @@ GameObject:
   - component: {fileID: 1920172600}
   - component: {fileID: 1920172602}
   - component: {fileID: 1920172601}
+  - component: {fileID: 1920172603}
   m_Layer: 5
-  m_Name: StatsPanel (1)
+  m_Name: Player 1 Instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8431,7 +8445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.50002, y: 182}
+  m_AnchoredPosition: {x: 0.5, y: 182}
   m_SizeDelta: {x: 0, y: -572}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1920172601
@@ -8464,6 +8478,18 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1920172599}
+--- !u!114 &1920172603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1920172599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8862ea7b10c84421c9485c36f04335a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestruction: 5
 --- !u!1 &1936593317
 GameObject:
   m_ObjectHideFlags: 0
