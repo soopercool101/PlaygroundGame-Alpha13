@@ -9,6 +9,9 @@ TagManager:
   - Bullet
   - Ground
   - Pickup
+  - Med
+  - Lure
+  - Zombie
   layers:
   - Default
   - TransparentFX
