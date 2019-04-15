@@ -423,16 +423,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 114730948317409702, guid: 08b2dbd01695613408290129227c8417,
-        type: 2}
-      propertyPath: canDash
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114730948317409702, guid: 08b2dbd01695613408290129227c8417,
-        type: 2}
-      propertyPath: dashMultiplier
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 08b2dbd01695613408290129227c8417, type: 2}
   m_IsPrefabParent: 0
@@ -475,39 +465,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114257894007378500, guid: 13802e8c10eb0a84aade0db13fe6f90c,
-        type: 2}
-      propertyPath: prefabToCreate
-      value: 
-      objectReference: {fileID: 1906889554094090, guid: 39182f89a83de03419dfc31ddf4ad5b6,
-        type: 2}
-    - target: {fileID: 114257894007378500, guid: 13802e8c10eb0a84aade0db13fe6f90c,
-        type: 2}
-      propertyPath: relativeToThisObject
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242848584753514, guid: 13802e8c10eb0a84aade0db13fe6f90c, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.59135
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242848584753514, guid: 13802e8c10eb0a84aade0db13fe6f90c, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.5913497
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242848584753514, guid: 13802e8c10eb0a84aade0db13fe6f90c, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.7884663
-      objectReference: {fileID: 0}
-    - target: {fileID: 1837409281477388, guid: 13802e8c10eb0a84aade0db13fe6f90c, type: 2}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 114622506719687162, guid: 13802e8c10eb0a84aade0db13fe6f90c,
-        type: 2}
-      propertyPath: keyToPress
-      value: 303
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114147439687495912, guid: 13802e8c10eb0a84aade0db13fe6f90c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 13802e8c10eb0a84aade0db13fe6f90c, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &830529698
