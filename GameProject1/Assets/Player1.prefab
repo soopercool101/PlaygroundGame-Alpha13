@@ -288,6 +288,9 @@ MonoBehaviour:
   typeOfControl: 1
   speed: 5
   movementType: 0
+  canDash: 1
+  dashKey: 304
+  dashMultiplier: 2
   orientToDirection: 0
   lookAxis: 0
 --- !u!114 &114879150546955084

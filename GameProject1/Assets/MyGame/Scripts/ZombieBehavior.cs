@@ -74,15 +74,20 @@ public class ZombieBehavior : Physics2DObject {
 	}
 
 	void SearchForTarget(){
-		float distanceFromP1 = Vector2.Distance (transform.position, mPlayer1.transform.position);
+        try
+        {
+            float distanceFromP1 = Vector2.Distance(transform.position, mPlayer1.transform.position);
 
-		if (distanceFromP1 <= SightDistance) {
-			foundTarget = true;
-		}
-		if (distanceFromP1 >= FollowDistance){
-			foundTarget = false;
-		}
-			
+            if (distanceFromP1 <= SightDistance)
+            {
+                foundTarget = true;
+            }
+            if (distanceFromP1 >= FollowDistance)
+            {
+                foundTarget = false;
+            }
+        }
+		catch { foundTarget = false; } // Fix after game over
 	}
 
 	void SearchForLure(){
