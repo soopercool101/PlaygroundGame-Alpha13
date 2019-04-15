@@ -5306,7 +5306,7 @@ MonoBehaviour:
 
     Left Shift: Run
 
-    Objective: Collect Med Packs'
+    Objective: Collect Med Crates'
 --- !u!222 &1139315796
 CanvasRenderer:
   m_ObjectHideFlags: 0
